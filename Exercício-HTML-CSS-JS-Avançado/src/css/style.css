@@ -1,0 +1,86 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-escuro);
+}
+
+main {
+    text-align: center;
+    color: var(--cinza-claro);
+}
+
+.cabecalho {
+    margin-bottom: 50px;
+}
+
+.cartao {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: var(--azul-neutro-escuro);
+    font-size: 28px;
+    font-weight: 800;
+    border-radius: 20px;
+    box-shadow: 5px 5px 35px rgba(7, 7, 7, 0.205);
+}
+
+.cartao h3 {
+    margin-bottom: 10px; 
+    color: var(--verde-neon);
+    font-size: 20PX;
+    letter-spacing: 5px;   
+}
+
+.cartao p {
+    margin-bottom: 10px;
+    padding: 0 65px;
+}
+
+.linha {
+    padding-bottom: 10px;
+}
+
+button{
+    border-radius: 50px;
+    margin-top: -30px;  
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--verde-neon);
+    transition: 0.6s;
+    box-shadow:  1px 5px 35px var(--verde-neon);
+}
+
+button .btn{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .cabecalho{
+        max-width: 425px;
+        font-size: 13px;
+    }
+    .cartao {
+        max-width: 425px;
+        font-size: 20px;
+    } 
+    button .btn {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .cabecalho{
+        max-width: 350px;
+        font-size: 10px;
+    }
+    .cartao {
+        max-width: 350px;
+    }
+}
